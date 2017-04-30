@@ -1,0 +1,19 @@
+<section id="app-item-view">
+    <h1>item.view</h1>
+
+    <ul>
+        <li><a href="/#!/">home</a></li>
+        <li><a href="/#!/items">item:list</a></li>
+    </ul>
+
+    <p>Item id: {{ item.id }}</p>
+    <p>Item title: {{ item.title }}</p>
+
+    <section>
+        <button type="button" ng-click="updateItem(item.id)">Update Item</button>
+    </section>
+
+    <section>
+        <button type="button" ng-click="deleteItem(item.id)">Delete Item</button>
+    </section>
+</section>

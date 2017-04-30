@@ -1,0 +1,18 @@
+<section id="app-item-list">
+    <h1>item.list</h1>
+
+    <ul>
+        <li><a href="/#!/">home</a></li>
+        <li><a href="/#!/items">item:list</a></li>
+    </ul>
+
+    <section>
+        <button type="button" ng-click="createItem()">Create Item</button>
+    </section>
+
+    <ol>
+        <li ng-repeat="item in items">
+            <a href="/#!/items/{{ item.id }}">Item #id {{ item.id }} | "{{ item.title }}"</a>
+        </li>
+    </ol>
+</section>
