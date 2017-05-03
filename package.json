@@ -1,0 +1,30 @@
+{
+  "name": "silex-angular",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "ybogdanov",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development node node_modules/webpack/bin/webpack",
+    "build": "NODE_ENV=production node node_modules/webpack/bin/webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "vue": "^2.2.1",
+    "vue-router": "^2.5.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-latest": "^6.0.0",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
+  }
+}

@@ -1,72 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="fragment" content="!">
-    <title>Silex 2.x + VueJS 2.x</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <style>
-        section {
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-
-<body>
-<div class="container-fluid" id="body">
-    <section id="app-default-index">
-        <h1>{{ title }}</h1>
-        <ul class="nav nav-pills">
-            <li>
-                <router-link to="/">Index</router-link>
-            </li>
-            <li>
-                <router-link to="/items">Items List</router-link>
-            </li>
-        </ul>
-    </section>
-
-    <router-view></router-view>
-</div>
-<script type="x-template" id="silex-index">
-</script>
-<script type="x-template" id="silex-list">
-    <section id="app-item-list">
-        <section>
-            <button class="btn btn-primary" type="button" @click.prevent="createItem">Create Item</button>
-        </section>
-        <ol>
-            <li v-for="item in items">
-                <router-link :to="{ name: 'item', params: { id: item.id } }">Item #id {{ item.id }} | "{{ item.title
-                    }}
-                </router-link>
-            </li>
-        </ol>
-    </section>
-</script>
-<script type="x-template" id="silex-item">
-    <section id="app-item-view">
-        <p>Item id: {{ item.id }}</p>
-        <p>Item title: {{ item.title }}</p>
-
-        <section>
-            <button class="btn btn-primary" type="button" @click.prevent="updateItem(item.id)">Update Item</button>
-        </section>
-
-        <section>
-            <button class="btn btn-danger" type="button" @click.prevent="deleteItem(item.id)">Delete Item</button>
-        </section>
-    </section>
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.2/vue.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.5.3/vue-router.min.js"></script>
-<!--<script src="https://unpkg.com/vue"></script>-->
-<!--<script src="https://unpkg.com/vue-router"></script>-->
-<script src="/vue/app.js"></script>
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>silex-angular</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="dist/build.js"></script>
+  </body>
 </html>
