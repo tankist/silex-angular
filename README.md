@@ -1,4 +1,4 @@
-# Silex 2.x + AngularJS 1.x
+# Silex 2.x + AngularJS 1.x + VueJS 2.x
 
 ## Install
 
